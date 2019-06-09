@@ -5,10 +5,13 @@ const bodyparser = require('body-parser');
 require('./config/config');
 
 
-
+//parse application/x-www-form-urlencoded
 app.use(bodyparser.urlencoded({extended:false}));
+//parse application/json
 app.use(bodyparser.json());
-app.use(require('./routes/usuario'));
+//Acceso a multiples rutas
+app.use(require('./routes/index'));
+
 
 
 
