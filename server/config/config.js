@@ -43,3 +43,9 @@ else{
 }
 
 process.env.MYURLDB = urlDB;
+
+//==============================
+//--Google Client ID
+//==============================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID||'720116371248-hlk1momp3i0epai1a1s34rhavdn0huga.apps.googleusercontent.com'
