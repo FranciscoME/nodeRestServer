@@ -8,7 +8,7 @@ let verificaToken = (req,res,next)=>{
     //Obtener los heades de la peticion
     let token = req.get('token');
 
-    jwt.verify(token,process.env.SEED,(err, decoded)=>{
+    jwt.verify(token , process.env.SEED , (err, decoded)=>{
         if(err){
             return res.status(401).json({
                 ok:false,
